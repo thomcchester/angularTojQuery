@@ -9,6 +9,7 @@ $(document).ready(function(){
     $.each($(".formCat").serializeArray(), function(i, field){
       val[field.name] = field.value;
     });
+    $(".cats").empty();
     addACat(val);
   });
 
