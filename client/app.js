@@ -33,7 +33,7 @@ function addACat(cat){
     type: "POST",
     url: "/addCat",
     data: cat,
-    success: function(newCat){
+    success: function(cats){
       $.ajax({
         type:"GET",
         url:"/cats",
